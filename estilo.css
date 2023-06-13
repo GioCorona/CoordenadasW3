@@ -1,0 +1,43 @@
+#map {
+	height: 480px;
+	width: 100%;
+}
+
+input[type="text"] {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	display: inline;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 6px;
+  }
+  
+  button {
+	padding: 8px 16px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #3a863d;
+  }
+  
+  button:focus {
+	outline: none;
+  }
+
+  .palabras, .coord{
+	display: inline-block;
+  }
+
+  #btnBuscar{
+	margin-right: 100px;
+  }

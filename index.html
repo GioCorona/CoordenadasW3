@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maps</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div class="coord">
+		<label for="lat">Latitud:</label>
+		<input type="text" id="lat" placeholder="Ingrese la latitud" value="19.8548689">
+		<label for="lng">Longitud:</label>
+		<input type="text" id="lng" placeholder="Ingrese la longitud" value="-98.9909347">
+		<button id="btnBuscar" onclick="moverMarcador()">Buscar</button>
+	</div>
+
+	<div class="palabras">	
+		<label for="words">Palabras:</label>
+		<input type="text" id="words">
+		<button onclick="buscarCoordenadas()">Buscar Coordenadas</button>
+	</div>
+	
+	<hr>
+	<div id="map"></div>
+
+	<script src="https://assets.what3words.com/sdk/v3/what3words.js?key=CR160KGX"></script>
+	<script src="script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+</html>
